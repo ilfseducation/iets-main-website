@@ -1,0 +1,229 @@
+/*!
+Theme Name: Divi Child Theme
+Theme URI: http://www.ilfsets.com/
+Description: A Divi Child Theme
+Author: IL&FS Education and Technology Services Limited
+Author URI: http://www.ilfsets.com
+Template: Divi
+http://103.95.192.32/testbed15wp/wp-admin/theme-editor.php Version: 1.0.0
+*/
+@import url("../Divi/style.css");
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+h1,h2,h3,h4,h5,h6{font-family:'Raleway',sans-serif; font-weight:300!important;}
+@media all and (max-width: 599px) and (min-width: 320px){
+	h1{font-size:30px!important;
+		font-color:#fff}
+	
+}
+@media all and (max-width: 599px) and (min-width: 320px) {
+    body, p{
+        font-size: 18px;
+    }
+ 
+}
+* body, p{font-family:'Raleway',sans-serif;font-size:18px;font-weight:300!important;}
+.product_container.img {
+  width: 100%;
+  height: 100%;
+	z-index: 1;
+}
+#footer-bottom{font-size:18px;}
+
+.overlay {
+  color: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 98%;
+  width: 100%;
+  opacity: 0;
+  padding: 1em;
+	z-index: 1;
+  transition: .5s ease;
+  background-color: #000000;
+}
+.overlay a{color:#ff0000; text-decoration: underline;}
+.overlay a:hover {color: #ff0000; text-decoration:none;}
+.product_container{z-index:0;}
+.product_container:hover .overlay {
+  opacity: .85;
+}
+
+.bg_girl{
+	background-repeat: no-repeat;
+	/*background-attachment: fixed;*/
+	background-position: right top!important;
+}
+/*IMPACT*/
+.img_holder {
+    position: relative;
+   }
+
+.text_bot_left{ position:absolute;
+bottom:16px;
+left:16px;
+color:#fff;}
+
+.text_top_left{
+	position:absolute;
+    top: 16px;
+    left: 16px;
+		}
+.text_top_right {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+.text_centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.impact_text{color: #fff;}
+#pat_bg:hover {
+    background-color: rgba(0,0,0,0.63);
+}
+.et_pb_module{margin-bottom:0!important;}
+.prod_container{width:100%; height:100%; z-index:2; /*display: inline-block;*/}
+
+.img_icon{
+	display: inline-block;
+	width:25%;
+	overflow:auto;
+	vertical-align:middle;
+	}
+.img_icon img{float:right;
+	width:60%; padding:0.5em;}
+
+@media screen and (max-width:768px){
+	.img_icon img{
+		padding:0.5em;}	
+}
+.img_resp{display: block;
+max-width: 100%;
+height: auto;}
+.prod_text_cont{display: inline-block; vertical-align: middle; width:75%; color:#fff; padding: 2px; float:right;}
+.prod_text{text-align: left; padding:0.5em 0.5em 0.5em 0.5em; color:#ffffff; font-size:120%!important;}
+.prod_text a{color:#ffffff!important; text-decoration:none;}
+.prod_text a:hover{color:#ffffff!important; text-decoration:underline;}
+
+/* What we do section Banner Text */
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+
+.heading_text{color:#ffffff; font-size:300%; font-weight:200; line-height:0.9em;}
+.banner_text{color:#ffffff; font-size:120%; font-weight: 300;}
+	}
+@media (min-width:768px){
+	
+	.heading_text{color:#ffffff; font-size:300%!important; font-weight:200; line-height:0.9em;}
+}
+/* END */
+/*Products about us
+.et_pb_gutters3 .et_pb_column{
+	margin-right:0%!important;
+}*/
+
+/*Mobile fixed menu*/
+@media (max-width: 980px) {
+.et_non_fixed_nav.et_transparent_nav #main-header, .et_non_fixed_nav.et_transparent_nav #top-header, .et_fixed_nav #main-header, .et_fixed_nav #top-header {
+    position: fixed;
+}
+}
+/*full page section bg color*/
+
+.et_pb_pagebuilder_layout .entry-content, .et_pb_pagebuilder_layout .et_pb_post .entry-content{
+	background-color:rgba(214,214,214,0.32)!important;
+}
+
+.edu-container {
+    display: table;
+    }
+.edu {
+    display: table-cell;
+    width:16.66%;
+}
+/*What we do products RA*/
+.what-container {
+    display: table;
+    }
+.what-cell {
+    display: table-cell;
+    height: 365px
+    }
+.text-title{background:#fff; padding:1em;}
+
+.txt_heading{font-size:1em; color:#fff; font-weight:300; line-height:1.3em; 
+	min-height:4em;
+	border:1px solid #000;
+	z-index: 1;
+	position:absolute;
+	margin:auto;
+	text-align:center;
+	top:1em;
+}
+/* Home Page - F03 - Adjust icon and button at bottom NVM */
+.edu-text-content{min-height: 7em;
+   vertical-align:middle;
+    border: 0px solid #fff;}
+
+.edu-text-content h4{
+	color:#fff!important;
+}
+
+.edu-img-container{bottom:0; z-index:1;}
+.et_pb_button{font-size:95%;}
+.text_bg{
+	font-weight: 300;
+    font-size: 18px;
+	line-height: 1.5;
+	color:#ffffff; 
+	background-color:rgba(0,0,0,0.6)!important; padding:1em;}
+/* Blog Featured Image */
+.et_post_meta_wrapper img{width:auto!important; height:auto;}
+
+/*Post Column Width
+.size-1of3{width: 25%!important;
+    margin-right: 1%!important;}*/
+
+/* Facebook Fix Height NVM */
+#ff-stream-1{min-height:auto!important;}
+#ff-stream-1 .picture-item__inner{height:25.3em;}
+@media (max-width: 768px){
+	#ff-stream-1 .picture-item__inner{
+		height:28em;}
+}
+@media (max-width: 576px){
+	#ff-stream-1 .picture-item__inner{
+		height:auto;}
+}
+/* Twitter Fix Height NVM */
+#ff-stream-2{min-height:auto!important;}
+/*#ff-stream-2 .picture-item__inner{height: 17em;}
+@media (max-width: 768px){
+	#ff-stream-2 .picture-item__inner{
+		height:31.5em;}
+}
+@media (max-width: 576px){
+	#ff-stream-2 .picture-item__inner{
+		height:auto;}
+}*/
+
+.et_pb_main_blurb_image{margin-bottom:0px;}
+.committee_text{font-size: 14px; line-height: 1.3em;}
+.breadcrumbs{padding-left:3%; font-size:80%; max-width:100%; background:#f2f2f2;}
+/* About Us Pillars NVM */
+.pillar1, .pillar2, .pillar3, .pillar4{
+	width:25%;
+	margin:auto;
+	height:210px;
+	background: #00ff00;
+	border: 0px solid red;
+}
+/*Main Banner*/
+.home_banner{max-width:900px!important;}
